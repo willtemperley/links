@@ -7,6 +7,7 @@ public class CallMe {
 
     //Ideas:
     //Add layer
+    //Programmable layers
     //Add map objects
     //Dynamic styles
     //Script over countries etc (provide api)

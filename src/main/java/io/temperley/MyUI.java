@@ -72,6 +72,9 @@ public class MyUI extends UI {
             }
         });
 
+        Svg svg = new Svg();
+        layout.addComponent(svg);
+
         try {
             ItemDocument pa = getPA();
             MonolingualTextValue monolingualTextValue = pa.getLabels().get(language);
