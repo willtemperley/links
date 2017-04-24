@@ -6,21 +6,20 @@ import org.wikidata.wdtk.wikibaseapi.WikibaseDataFetcher;
 import org.wikidata.wdtk.wikibaseapi.apierrors.MediaWikiApiErrorException;
 
 import java.util.Iterator;
-import java.util.List;
 
 /**
  * Created by will on 29/01/17.
  */
-public class ProtectedAreaData {
+public class WikiDataAccess {
 
     private final WikibaseDataFetcher wbdf = WikibaseDataFetcher.getWikidataDataFetcher();
 
     public static void main(String[] args) throws MediaWikiApiErrorException {
 
-        ProtectedAreaData protectedAreaData = new ProtectedAreaData("Q223589");
+        WikiDataAccess wikiDataAccess = new WikiDataAccess("Q223589");
     }
 
-    public ProtectedAreaData(String entityId) throws MediaWikiApiErrorException {
+    public WikiDataAccess(String entityId) throws MediaWikiApiErrorException {
 
         EntityDocument q42 = wbdf.getEntityDocument(entityId);
 
