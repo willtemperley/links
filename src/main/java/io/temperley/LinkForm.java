@@ -64,7 +64,7 @@ public class LinkForm extends VerticalLayout implements MethodEventSource {
         save.addClickListener(e -> {
 
             Link link = getLink();
-            linkDAO.update(link);
+            linkDAO.persist(link);
             eventRouter.fireEvent(e);
             actionListener.action(Action.Update, link);
 

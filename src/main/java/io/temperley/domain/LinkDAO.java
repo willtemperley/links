@@ -31,6 +31,15 @@ public class LinkDAO extends PGAccess implements DAO<Link> {
 
     }
 
+    public Link persist(Link link) {
+        //fixme need identifiers
+        if (link.getId() == null) {
+            create(link);
+        } else {
+            update(link);
+        }
+        return link;
+    }
 
     public Link update(Link link) {
         Connection connection = getConnection();
