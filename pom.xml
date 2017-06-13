@@ -4,20 +4,22 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.temperley</groupId>
-	<artifactId>link</artifactId>
+	<artifactId>links</artifactId>
 	<packaging>war</packaging>
 	<version>0.1</version>
-	<name>link</name>
+	<name>links</name>
 
 	<prerequisites>
 		<maven>3</maven>
 	</prerequisites>
 
 	<properties>
-		<vaadin.version>8.0.5</vaadin.version>
-		<vaadin.plugin.version>8.0.5</vaadin.plugin.version>
-		<jetty.plugin.version>9.3.9.v20160517</jetty.plugin.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<vaadin.version>8.1.0.alpha6</vaadin.version>
+		<vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
+		<jetty.plugin.version>9.4.5.v20170502</jetty.plugin.version>
+
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<!-- If there are no local customisations, this can also be "fetch" or "cdn" -->
@@ -31,7 +33,6 @@
 			<url>http://maven.vaadin.com/vaadin-addons</url>
 		</repository>
 	</repositories>
-
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -46,24 +47,32 @@
 
 	<dependencies>
         <dependency>
-            <groupId>io.reactivex.rxjava2</groupId>
-            <artifactId>rxjava</artifactId>
-            <version>2.0.8</version>
-        </dependency>
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.vaadin.addons</groupId>
-            <artifactId>aceeditor</artifactId>
-            <version>0.8.15</version>
+            <groupId>org.roadlessforest</groupId>
+            <artifactId>training</artifactId>
+            <version>0.1</version>
         </dependency>
 		<dependency>
-			<groupId>org.wikidata.wdtk</groupId>
-			<artifactId>wdtk-client</artifactId>
-            <version>${wdtk-client.version}</version>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.0</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.4.4</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.2</version>
+			<type>jar</type>
+		</dependency>
+        <dependency>
+			<groupId>org.vaadin.alump.scaleimage</groupId>
+			<artifactId>scaleimage-addon</artifactId>
+			<version>0.4.1</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -81,7 +90,8 @@
 		</dependency>
 		<dependency>
 			<groupId>com.vaadin</groupId>
-			<artifactId>vaadin-client-compiled</artifactId>
+			<artifactId>vaadin-client-compiler</artifactId>
+            <scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.vaadin</groupId>
