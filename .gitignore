@@ -1,3 +1,8 @@
 .idea/*
 target/*
+<<<<<<< HEAD
 *.iml
+=======
+*.iml
+/src/main/resources/jdbc.properties
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe

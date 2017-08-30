@@ -4,22 +4,36 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.temperley</groupId>
+<<<<<<< HEAD
 	<artifactId>links</artifactId>
 	<packaging>war</packaging>
 	<version>0.1</version>
 	<name>links</name>
+=======
+	<artifactId>link</artifactId>
+	<packaging>war</packaging>
+	<version>0.1</version>
+	<name>link</name>
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe
 
 	<prerequisites>
 		<maven>3</maven>
 	</prerequisites>
 
 	<properties>
+<<<<<<< HEAD
 		<vaadin.version>8.1.0.alpha6</vaadin.version>
 		<vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
 		<jetty.plugin.version>9.4.5.v20170502</jetty.plugin.version>
 
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+=======
+		<vaadin.version>8.0.5</vaadin.version>
+		<vaadin.plugin.version>8.0.5</vaadin.plugin.version>
+		<jetty.plugin.version>9.3.9.v20160517</jetty.plugin.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<!-- If there are no local customisations, this can also be "fetch" or "cdn" -->
@@ -33,6 +47,10 @@
 			<url>http://maven.vaadin.com/vaadin-addons</url>
 		</repository>
 	</repositories>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -47,6 +65,7 @@
 
 	<dependencies>
         <dependency>
+<<<<<<< HEAD
             <groupId>org.roadlessforest</groupId>
             <artifactId>training</artifactId>
             <version>0.1</version>
@@ -73,6 +92,31 @@
 			<groupId>org.vaadin.alump.scaleimage</groupId>
 			<artifactId>scaleimage-addon</artifactId>
 			<version>0.4.1</version>
+=======
+            <groupId>io.reactivex.rxjava2</groupId>
+            <artifactId>rxjava</artifactId>
+            <version>2.0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.vaadin.addons</groupId>
+            <artifactId>extended-token-field</artifactId>
+            <version>0.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.vaadin.addons</groupId>
+            <artifactId>aceeditor</artifactId>
+            <version>0.8.15</version>
+        </dependency>
+		<dependency>
+			<groupId>org.wikidata.wdtk</groupId>
+			<artifactId>wdtk-client</artifactId>
+            <version>${wdtk-client.version}</version>
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -90,8 +134,12 @@
 		</dependency>
 		<dependency>
 			<groupId>com.vaadin</groupId>
+<<<<<<< HEAD
 			<artifactId>vaadin-client-compiler</artifactId>
             <scope>provided</scope>
+=======
+			<artifactId>vaadin-client-compiled</artifactId>
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe
 		</dependency>
 		<dependency>
 			<groupId>com.vaadin</groupId>

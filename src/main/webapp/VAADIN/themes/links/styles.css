@@ -892,8 +892,11 @@
  * @group tree
  */
 
+<<<<<<< HEAD
 /** Expander button visual - expanded */
 
+=======
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe
 /**
  *
  *
@@ -983,7 +986,11 @@
  */
 
 .v-vaadin-version:after {
+<<<<<<< HEAD
 	content: "8.1.0.alpha6";
+=======
+	content: "8.0.5";
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe
 }
 
 .v-widget {
@@ -1533,6 +1540,7 @@ div.v-layout.v-horizontal.v-widget {
 	vertical-align: top;
 }
 
+<<<<<<< HEAD
 .links .scale-image {
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -1540,6 +1548,8 @@ div.v-layout.v-horizontal.v-widget {
 	display: inline-block;
 }
 
+=======
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe
 .links.v-app, .links.v-app-loading {
 	font: 300 16px/1.55 "Open Sans", sans-serif;
 	color: #464646;
@@ -1725,10 +1735,13 @@ div.v-layout.v-horizontal.v-widget {
 	filter: alpha(opacity=50) ;
 }
 
+<<<<<<< HEAD
 .links .v-draggable {
 	user-select: none !important;
 }
 
+=======
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe
 .links .v-tooltip {
 	background-color: rgba(50, 50, 50, 0.9);
 	-webkit-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
@@ -4892,6 +4905,7 @@ div.v-layout.v-horizontal.v-widget {
 	min-width: 30px;
 }
 
+<<<<<<< HEAD
 .links .v-grid-row-drag-badge {
 	background-color: red;
 	color: white;
@@ -4904,6 +4918,8 @@ div.v-layout.v-horizontal.v-widget {
 	float: left;
 }
 
+=======
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe
 .links .v-textfield {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -8540,6 +8556,7 @@ div.v-layout.v-horizontal.v-widget {
 	line-height: 1px;
 }
 
+<<<<<<< HEAD
 .links .v-tree-grid-expander {
 	display: inline-block;
 	width: 10px;
@@ -8654,6 +8671,8 @@ div.v-layout.v-horizontal.v-widget {
 	display: none;
 }
 
+=======
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe
 .links .v-table {
 	position: relative;
 	background: #fafafa;
@@ -12639,6 +12658,7 @@ div.v-layout.v-horizontal.v-widget {
 	display: inline-block;
 	width: 19px;
 	overflow: hidden;
+<<<<<<< HEAD
 }
 
 .links.v-app, .links.v-app-loading {
@@ -23801,4 +23821,6 @@ div.v-layout.v-horizontal.v-widget {
 
 .links .adjust-image.with-padding {
 	padding: 10px 20px 20px 10px;
+=======
+>>>>>>> 526353e2164735df00b1a9ef382568d71dd3dcfe
 }
